@@ -43,4 +43,30 @@ while (isUserHappy === false) {
         + ", 4 for new entertainment "
         + ", 5 to start fresh "
         + ", 6 to confirm selections");
-}
+        if (userInput === "1") {
+            destination = selectRandom(destinationArray);
+        } else if (userInput === "2") {
+            restaurant = selectRandom(restaurantArray);
+        } else if (userInput === "3") {
+            transport = selectRandom(transportationArray);
+        } else if (userInput === "4") {
+            entertain = selectRandom(entertainmentArray);
+        } else if (userInput = "5") {
+            destination = selectRandom(destinationArray);
+            restaurant = selectRandom(restaurantArray);
+            transport = selectRandom(transportationArray);
+            entertain = selectRandom(entertainmentArray);
+        } else if (userInput === "6") {
+            isUserHappy === true;
+            alert("Trip Confirmed! " + presentTrip);
+            break;
+    
+        } else {
+            alert("Please enter a valid number.");
+    
+        }
+    
+    
+    }
+    console.log(presentTrip);
+
